@@ -53,30 +53,56 @@ const Home: NextPage = () => {
             <div className="">
               <p className="pb-5">what we do..</p>
               <div className="border border-grey-500 p-10">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ad
-                consequuntur voluptates pariatur? Commodi, a dolorum! Ullam ad
-                corrupti laboriosam inventore officia cumque sapiente corporis
-                voluptates, culpa libero eius totam?
+                <ul className="leading-6">
+                  <li className="list-disc">
+                    We Build custome websites that are tailored to your unique
+                    business needs and goals.
+                  </li>
+                  {/* <li className="list-disc">
+                    We use latest technologies and techniques to ensure that
+                    your website is fast, secure and user-friendly.
+                  </li> */}
+                  <li className="list-disc">
+                    We are also building a community for all the developers and
+                    creators around the glob.
+                  </li>
+                </ul>
               </div>
             </div>
             <div className=""></div>
             <div className=""></div>
             <div className="">
-              <p className="pb-5">what we do..</p>
+              <p className="pb-5">why we do..</p>
               <div className="border border-grey-500 p-10">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ad
-                consequuntur voluptates pariatur? Commodi, a dolorum! Ullam ad
-                corrupti laboriosam inventore officia cumque sapiente corporis
-                voluptates, culpa libero eius totam?
+                <ul className="leading-6">
+                  <li className="list-disc">
+                    To connect with a global audience
+                  </li>
+                  <li className="list-disc">To foster community</li>
+                  {/* <li className="list-disc">
+                    We are also building a community for all the developers and
+                    creators around the glob.
+                  </li> */}
+                </ul>
               </div>
             </div>
             <div className="">
-              <p className="pb-5">what we do..</p>
+              <p className="pb-5">how we do..</p>
               <div className="border border-grey-500 p-10">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ad
-                consequuntur voluptates pariatur? Commodi, a dolorum! Ullam ad
-                corrupti laboriosam inventore officia cumque sapiente corporis
-                voluptates, culpa libero eius totam?
+                <ul className="leading-6">
+                  <li className="list-disc">
+                    We use latest technologies and techniques to ensure that
+                    your website is fast, secure and user-friendly.
+                  </li>
+                  {/* <li className="list-disc">
+                    We Build custome websites that are tailored to your unique
+                    business needs and goals.
+                  </li>
+                  <li className="list-disc">
+                    We are also building a community for all the developers and
+                    creators around the glob.
+                  </li> */}
+                </ul>
               </div>
             </div>
             <div className=""></div>
@@ -116,7 +142,7 @@ const Home: NextPage = () => {
           <p>Copyright © 2022 - All right reserved</p>
         </div>
         <div className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
-          <a>
+          <a href="https://github.com/WebVikasak-S">
             <AiFillGithub className="h-6 w-6" />
           </a>
           <a>
