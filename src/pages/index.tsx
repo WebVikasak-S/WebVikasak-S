@@ -6,7 +6,7 @@ import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
 import { IoIosArrowDown } from "react-icons/io";
 
 const Home: NextPage = () => {
-  const ref = useRef(null);
+  const ref = useRef<null | HTMLDivElement>(null);
 
   const handleClick = () => {
     ref.current?.scrollIntoView({ behavior: "smooth" });
