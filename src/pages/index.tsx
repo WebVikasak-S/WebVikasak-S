@@ -4,6 +4,7 @@ import { useRef } from "react";
 import Head from "next/head";
 import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
 import { IoIosArrowDown } from "react-icons/io";
+import Link from "next/link";
 
 const Home: NextPage = () => {
   const ref = useRef<null | HTMLDivElement>(null);
@@ -31,9 +32,11 @@ const Home: NextPage = () => {
             accusamus reprehend
           </p>
           <div className="p-6">
-            <button className="btn btn-outline">
-              <AiFillGithub className="h-6 w-6" />
-            </button>
+            <a href="https://github.com/akashag55/WebVikasak-S">
+              <button className="btn btn-outline">
+                <AiFillGithub className="h-6 w-6" />
+              </button>
+            </a>
           </div>
         </div>
         <div className="flex flex-col justify-center items-center mb-5">
@@ -49,67 +52,67 @@ const Home: NextPage = () => {
       </section>
       <section id="" ref={ref} className="h-screen flex flex-col section2_bg">
         <div className="h-screen flex flex-col justify-center item-center p-4">
-          <div className="grid grid-cols-2 gap-4 p-2">
-            <div className="">
-              <p className="pb-5">what we do..</p>
-              <div className="border border-grey-500 p-10">
-                <ul className="leading-6">
-                  <li className="list-disc">
-                    We Build custome websites that are tailored to your unique
-                    business needs and goals.
-                  </li>
-                  {/* <li className="list-disc">
+          <div className="container mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+              <div>
+                <p className="pb-5">what we do..</p>
+                <div className="border border-grey-500 p-10">
+                  <ul className="leading-6">
+                    <li className="list-disc">
+                      We Build custome websites that are tailored to your unique
+                      business needs and goals.
+                    </li>
+                    {/* <li className="list-disc">
                     We use latest technologies and techniques to ensure that
                     your website is fast, secure and user-friendly.
                   </li> */}
-                  <li className="list-disc">
-                    We are also building a community for all the developers and
-                    creators around the glob.
-                  </li>
-                </ul>
+                    <li className="list-disc">
+                      We are also building a community for all the developers
+                      and creators around the glob.
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
-            {/* <div className="divider lg:divider-horizontal">OR</div> */}
-            <div className="contents">
-              <Image
-                src="/undraw_in_sync_re_jlqd.svg"
-                alt="Picture of the author"
-                width={350}
-                height={200}
-              />
-            </div>
-            <div className="contents">
-              <Image
-                src="/undraw_futuristic_interface_re_0cm6.svg"
-                alt="Picture of the author"
-                width={350}
-                height={200}
-              />
-            </div>
-            <div className="">
-              <p className="pb-5">why we do..</p>
-              <div className="border border-grey-500 p-10">
-                <ul className="leading-6">
-                  <li className="list-disc">
-                    To connect with a global audience
-                  </li>
-                  <li className="list-disc">To foster community</li>
-                  {/* <li className="list-disc">
+              <div className="contents">
+                <Image
+                  src="/undraw_in_sync_re_jlqd.svg"
+                  alt="Picture of the author"
+                  width={350}
+                  height={200}
+                />
+              </div>
+              <div className="contents">
+                <Image
+                  src="/undraw_futuristic_interface_re_0cm6.svg"
+                  alt="Picture of the author"
+                  width={350}
+                  height={200}
+                />
+              </div>
+              <div>
+                <p className="pb-5">why we do..</p>
+                <div className="border border-grey-500 p-10">
+                  <ul className="leading-6">
+                    <li className="list-disc">
+                      To connect with a global audience
+                    </li>
+                    <li className="list-disc">To foster community</li>
+                    {/* <li className="list-disc">
                     We are also building a community for all the developers and
                     creators around the glob.
                   </li> */}
-                </ul>
+                  </ul>
+                </div>
               </div>
-            </div>
-            <div className="">
-              <p className="pb-5">how we do..</p>
-              <div className="border border-grey-500 p-10">
-                <ul className="leading-6">
-                  <li className="list-disc">
-                    We use latest technologies and techniques to ensure that
-                    your website is fast, secure and user-friendly.
-                  </li>
-                  {/* <li className="list-disc">
+              <div>
+                <p className="pb-5">how we do..</p>
+                <div className="border border-grey-500 p-10">
+                  <ul className="leading-6">
+                    <li className="list-disc">
+                      We use latest technologies and techniques to ensure that
+                      your website is fast, secure and user-friendly.
+                    </li>
+                    {/* <li className="list-disc">
                     We Build custome websites that are tailored to your unique
                     business needs and goals.
                   </li>
@@ -117,16 +120,17 @@ const Home: NextPage = () => {
                     We are also building a community for all the developers and
                     creators around the glob.
                   </li> */}
-                </ul>
+                  </ul>
+                </div>
               </div>
-            </div>
-            <div className="contents">
-              <Image
-                src="/undraw_community_re_cyrm.svg"
-                alt="Picture of the author"
-                width={350}
-                height={200}
-              />
+              <div className="contents">
+                <Image
+                  src="/undraw_community_re_cyrm.svg"
+                  alt="Picture of the author"
+                  width={350}
+                  height={200}
+                />
+              </div>
             </div>
           </div>
         </div>
