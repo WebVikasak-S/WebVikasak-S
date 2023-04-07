@@ -26,10 +26,7 @@ const Home: NextPage = () => {
       </Head>
       {/* ----------------------------INTRO SECTION---------------------- */}
 
-      <section
-        id="1"
-        className="sm:h-fit md:h-screen flex flex-col section1_bg"
-      >
+      <section id="1" className="h-fit flex flex-col section1_bg">
         <div className="h-screen flex flex-col justify-center items-center z-0">
           <Image
             src="/wvName.png"
@@ -75,12 +72,8 @@ const Home: NextPage = () => {
 
       {/* ----------------------------ABOUT SECTION---------------------- */}
 
-      <section
-        id=""
-        ref={ref}
-        className="sm:h-fit md:h-screen flex flex-col section1_bg"
-      >
-        <div className="h-screen flex flex-col justify-center item-center p-4 z-0">
+      <section id="" ref={ref} className="h-fit flex flex-col section1_bg">
+        <div className=" flex flex-col justify-center item-center p-4 z-0">
           <SectionHeading title="ABOUT US" />
           <div className="container mx-auto">
             <div className="">
