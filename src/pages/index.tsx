@@ -9,7 +9,8 @@ import {
 } from "react-icons/ai";
 import { IoIosArrowDown } from "react-icons/io";
 import SectionHeading from "../components/SectionHeading";
-
+import Technology from "../components/Technology";
+import Tech from "../utils/data";
 const Home: NextPage = () => {
   const ref = useRef<null | HTMLDivElement>(null);
 
@@ -34,9 +35,6 @@ const Home: NextPage = () => {
             width={750}
             height={150}
           />
-          {/* <h2 className="text-[3rem] lg:text-[5rem] md:text-[5rem] font-mono ">
-            {name}
-          </h2> */}
           <p className="text-2xl text-textColor p-4 text-center">
             Are you a web developer looking for a supportive community to share
             your ideas and collaborate with like-minded professionals. <br />
@@ -77,7 +75,7 @@ const Home: NextPage = () => {
           <SectionHeading title="ABOUT US" />
           <div className="container mx-auto">
             <div className="">
-              <div className="flex sm: justify-evenly mt-20">
+              <div className="flex flex-col-reverse sm:flex-row justify-evenly mt-20">
                 <div>
                   <p className="pb-4 pl-5 font-semibold text-2xl">
                     what we do..
@@ -104,7 +102,7 @@ const Home: NextPage = () => {
                   />
                 </div>
               </div>
-              <div className="flex justify-evenly mt-20">
+              <div className="flex flex-col sm:flex-row justify-evenly mt-20">
                 <div className="contents">
                   <Image
                     src="/undraw_futuristic_interface_re_0cm6.svg"
@@ -127,7 +125,7 @@ const Home: NextPage = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex justify-evenly mt-20">
+              <div className="flex flex-col-reverse sm:flex-row justify-evenly mt-20">
                 <div>
                   <p className="pb-5 pl-5 font-semibold text-2xl">
                     how we do..
@@ -154,13 +152,33 @@ const Home: NextPage = () => {
           </div>
         </div>
       </section>
+
+      {/* ----------------------------SKILLS SECTION---------------------- */}
+      <section className="h-fit flex flex-col justify-center item-center section1_bg">
+        <div className="z-0">
+          <SectionHeading title="Technologies" />
+          <div>
+            {Tech.map((item: any, index: number) => (
+              <Technology
+                key={index}
+                src={item.src}
+                alt={item.alt}
+                name={item.name}
+                imageClassname="relative h-25 w-25"
+                className="flex gap-5 p-4 "
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ----------------------------DEVELOPER SECTION---------------------- */}
 
       <section className="h-screen flex flex-col justify-center item-center section1_bg">
         <div className="z-0">
           <SectionHeading title="OUR TEAM" />
-          <div className="grid grid-cols-2 justify-items-center gap-10">
-            <div className="">
+          <div className="flex justify-around items-center gap-10">
+            <div>
               <div className="border border-grey-200 w-40 h-40 rounded-full">
                 <Image
                   className="border border-grey-200 w-40 h-40 rounded-full"
@@ -175,7 +193,7 @@ const Home: NextPage = () => {
                 <p>Founder and Developer</p>
               </div>
             </div>
-            <div className="">
+            <div>
               <div className="border border-grey-200 w-40 h-40 rounded-full">
                 <Image
                   className="border border-grey-200 w-40 h-40 rounded-full"
@@ -194,25 +212,28 @@ const Home: NextPage = () => {
         </div>
       </section>
       <footer className="footer items-center p-4 border-t-2 text-content section1_bg">
-        <div className="items-center grid-flow-col z-0">
-          {/* <img src="../utils/logos/WV short white.png" alt="short logo" /> */}
-          <Image
-            className="-rotate-12"
-            src="/logo_initials.png"
-            alt="Short Lofo"
-            width={130}
-            height={55}
-          />
+        <div className="flex justify-between items-center z-0 w-full">
+          <div className="w-12 h-5 relative">
+            <Image
+              width={20}
+              height={20}
+              layout="fill"
+              className="-rotate-12"
+              src="/logo_initials.png"
+              alt="Short Lofo"
+              style={{ objectFit: "contain" }}
+            />
+          </div>
           <p>Copyright © 2022 - All right reserved</p>
         </div>
-        <div className="grid-flow-col gap-4 md:place-self-center md:justify-self-end z-0">
+        {/* <div className="grid-flow-col gap-4 md:place-self-center md:justify-self-end z-0">
           <a href="https://github.com/WebVikasak-S">
             <AiFillGithub className="h-6 w-6" />
           </a>
           <a>
             <AiFillInstagram className="h-6 w-6" />
           </a>
-        </div>
+        </div> */}
       </footer>
     </>
   );
