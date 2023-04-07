@@ -6,6 +6,9 @@ module.exports = {
     fontFamily: {
       sans: 'Assistant, system-ui, BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;',
     },
+    textColor: {
+      textColor: "#FCC8B2",
+    },
     extend: {},
   },
   plugins: [require("daisyui")],
