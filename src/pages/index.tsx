@@ -156,8 +156,10 @@ const Home: NextPage = () => {
       {/* ----------------------------SKILLS SECTION---------------------- */}
       <section className="h-fit flex flex-col justify-center item-center section1_bg">
         <div className="z-0">
-          <SectionHeading title="Technologies" />
-          <div>
+          <SectionHeading title="Technologies we work On" />
+
+          <Technology />
+          {/* <div>
             {Tech.map((item: any, index: number) => (
               <Technology
                 key={index}
@@ -168,7 +170,7 @@ const Home: NextPage = () => {
                 className="flex gap-5 p-4 "
               />
             ))}
-          </div>
+          </div> */}
         </div>
       </section>
 
