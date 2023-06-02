@@ -27,7 +27,10 @@ const Home: NextPage = () => {
       </Head>
       {/* ----------------------------INTRO SECTION---------------------- */}
 
-      <section id="1" className="h-fit flex flex-col section1_bg">
+      <section
+        id="1"
+        className="h-fit flex flex-col section1_bg sm:section1_bg_mobile"
+      >
         <div className="h-screen flex flex-col justify-center items-center z-0">
           <Image
             src="/wvName.png"
@@ -76,19 +79,19 @@ const Home: NextPage = () => {
           <div className="container mx-auto">
             <div className="">
               <div className="flex flex-col-reverse sm:flex-row justify-evenly mt-20">
-                <div>
+                <div className="my-10">
                   <p className="pb-4 pl-5 font-semibold text-2xl">
                     what we do..
                   </p>
                   <div className="px-10 py-5">
                     <ul className="leading-8">
                       <p className="list-disc">
-                        We Build custome websites that are tailored to your
+                        We build custome websites that are tailored to your
                         unique business needs and goals.
                       </p>
                       <p className="list-disc">
                         We are also building a community for all the developers
-                        and creators around the glob.
+                        and creators around the globe.
                       </p>
                     </ul>
                   </div>
@@ -111,7 +114,7 @@ const Home: NextPage = () => {
                     height={200}
                   />
                 </div>
-                <div>
+                <div className="my-10">
                   <p className="pb-4 pl-5 font-semibold text-2xl">
                     why we do..
                   </p>
@@ -126,7 +129,7 @@ const Home: NextPage = () => {
                 </div>
               </div>
               <div className="flex flex-col-reverse sm:flex-row justify-evenly mt-20">
-                <div>
+                <div className="my-10">
                   <p className="pb-5 pl-5 font-semibold text-2xl">
                     how we do..
                   </p>
@@ -150,6 +153,14 @@ const Home: NextPage = () => {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* ----------------------------PROJECTS SECTION---------------------- */}
+
+      <section className="h-fit flex flex-col justify-center items-center section1_bg">
+        <div className="z-0">
+          <SectionHeading title="Projects" />
         </div>
       </section>
 

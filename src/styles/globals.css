@@ -7,12 +7,16 @@ body {
 .section1_bg {
   background: url(../assets/blob-scene-haikei1.svg) no-repeat center center
     fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   position: relative;
 }
+.section1_bg_mobile {
+  background: url(../assets/blob-scene-haikei2.svg) no-repeat center center
+    fixed;
+  background-size: cover;
+  position: relative;
+}
+
 .section1_bg::before {
   content: "";
   position: absolute;

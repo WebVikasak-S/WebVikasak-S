@@ -58,7 +58,7 @@ const Technology = (props: any) => {
         {tech.map((item: any, index: any) => {
           return (
             <div
-              className=" flex flex-col justily-center items-center border rounded p-3 m-5 w-3/12"
+              className="flex flex-col justify-center items-center border rounded p-3 m-5 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4"
               key={index}
             >
               <div className="w-8 h-8 self-center">
